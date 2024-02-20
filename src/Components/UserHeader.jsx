@@ -24,23 +24,23 @@ const UserHeader = () => {
     <Flex justifyContent={"space-between"} w={"full"}>
         <Box>
             <Text fontSize={"2xl"} fontWeight={"bold"}>
-                Hari
+                Mark Zuckerberg
             </Text>
             <Flex gap={2} alignItems={"center"}>
-                <Text fontSize={"sm"}>Harikarthik</Text>
+                <Text fontSize={"sm"}>Zuckerberg</Text>
                 <Text fontSize={"x-small"} bg={"gray.dark"} color={"gray.light"} p={1} borderRadius={"full"}>
                     Threads.Net
                 </Text>
             </Flex>
         </Box>
         <Box>
-            <Avatar name='Hari' src='/hari-avatar.png'size={"xl"}/>
+            <Avatar name='Hari' src='/zuck-avatar.png'size={"xl"}/>
         </Box>
     </Flex>
-     <Text>Co-founder , Executive chairman and CEO of Alpha Platforms.</Text>
+     <Text>Co-founder , Executive chairman and CEO of Meta Platforms.</Text>
    <Flex w={"full"} justifyContent={"space-between"}>
     <Flex gap={2} alignItems={"center"}>
-        <Text color={"gray.light"}>7.7M followers</Text>
+        <Text color={"gray.light"}>1.7M followers</Text>
         <Box w={1} h={1} bg={"gray.light"} borderRadius={"full"}></Box>
      <Link color={"gray.light"}>instagram.com</Link>
     </Flex>
