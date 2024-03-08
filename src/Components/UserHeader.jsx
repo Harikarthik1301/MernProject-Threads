@@ -1,4 +1,4 @@
-import { Avatar, Box, Flex, Link, Menu, MenuButton, MenuItem, MenuList, Portal, Text, VStack, useToast } from '@chakra-ui/react'
+import { Avatar, Box, Flex, Image, Link, Menu, MenuButton, MenuItem, MenuList, Portal, Text, VStack, useToast } from '@chakra-ui/react'
 import React from 'react'
 import {BsInstagram} from "react-icons/bs"
 import {CgMoreO} from "react-icons/cg"
@@ -23,21 +23,24 @@ const UserHeader = () => {
    <VStack gap={4} alignItems={"start"}>
     <Flex justifyContent={"space-between"} w={"full"}>
         <Box>
+        <Flex w={"full"} alignItems={"center"}>
             <Text fontSize={"2xl"} fontWeight={"bold"}>
-                Mark Zuckerberg
+            Mahendra Singh Dhoni
             </Text>
+            <Image src='/verified.png' w={4} h={4} ml={1}/>
+            </Flex>
             <Flex gap={2} alignItems={"center"}>
-                <Text fontSize={"sm"}>Zuckerberg</Text>
+                <Text fontSize={"sm"}>MSD</Text>
                 <Text fontSize={"x-small"} bg={"gray.dark"} color={"gray.light"} p={1} borderRadius={"full"}>
                     Threads.Net
                 </Text>
             </Flex>
         </Box>
         <Box>
-            <Avatar name='Hari' src='/zuck-avatar.png'size={"xl"}/>
+            <Avatar name='Hari' src='/msdpro.jpg'size={"xl"}/>
         </Box>
     </Flex>
-     <Text>Co-founder , Executive chairman and CEO of Meta Platforms.</Text>
+     <Text>Formal Captain of Indian Cricket Team ,Captain of CSK.</Text>
    <Flex w={"full"} justifyContent={"space-between"}>
     <Flex gap={2} alignItems={"center"}>
         <Text color={"gray.light"}>1.7M followers</Text>
@@ -60,6 +63,14 @@ const UserHeader = () => {
       </Portal>
      </Menu>
 	</Box>
+    </Flex>
+   </Flex>
+   <Flex w={"full"}>
+    <Flex flex={1} borderBottom={"1.5px solid white"} justifyContent={"center"} pb={"3"} cursor={"pointer"}>
+        <Text fontWeight={"bold"}>Posts</Text>
+    </Flex>
+    <Flex flex={1} borderBottom={"1px solid gray"} color={"gray.light"} justifyContent={"center"} pb={"3"} cursor={"pointer"}>
+        <Text fontWeight={"bold"}>Replies</Text>
     </Flex>
    </Flex>
    </VStack>
